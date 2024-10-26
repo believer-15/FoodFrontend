@@ -1,3 +1,5 @@
+// icon:arrow-right-short | Bootstrap https://icons.getbootstrap.com/ | Bootstrap
+
 function IconArrowRightShort(props) {
   return (
     <svg
