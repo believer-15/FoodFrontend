@@ -52,9 +52,9 @@ function Signup() {
             return;
         }
 
-        const apiReponse = await dispatch(createAccount(signUpState));
-        console.log("Api response", apiReponse);
-        if(apiReponse.payload.data.success) {
+        const apiResponse = await dispatch(createAccount(signUpState));
+        console.log("Api response", apiResponse);
+        if(apiResponse.payload.data.success) {
             navigate('/auth/login');
         }
     }

@@ -36,9 +36,9 @@ function Login() {
             return;
         }
 
-        const apiReponse = await dispatch(login(loginData));
-        console.log("Api response", apiReponse);
-        if(apiReponse.payload.data.success) {
+        const apiResponse = await dispatch(login(loginData));
+        console.log("Api response", apiResponse);
+        if(apiResponse.payload.data.success) {
             navigate('/');
         }
     }
